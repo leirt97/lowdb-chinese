@@ -1,9 +1,7 @@
 # lowdb
-==
 一个灵活存取 json 格式数据的包
 参考于[lowdb](https://github.com/typicode/lowdb#install)
 # 使用
-==
 ## npm
 ```
 npm install lowdb --save -dev
@@ -48,7 +46,6 @@ db.setState(newState)
 console.log(db.getState())
 ```
 # API
-==
 ### low(adapter)
 返回一个带有附加属性和函数的lodash链。
 ### db.[...].write()
@@ -109,7 +106,6 @@ db.write()
   .then(() => console.log('State has been updated'))
 ```
 # Adapters API
-==
 请注意，这只适用于与Lowdb捆绑的适配器。第三方适配器可能有不同的选项。  为了方便起见，文件ync、FileAsync和LocalBrowser接受以下选项
 * `defaultValue` 如果文件不存在，那么这个值将被用来设置初始状态(default: {})
 * `serialize/deserialize` 在 writing 之前 reading 之后使用的方法(default: `JSON.stringify` and `JSON.parse` )
@@ -121,7 +117,6 @@ const adapter = new FileSync('array.yaml', {
 })
 ```
 # 指南
-==
 ## 如何查询
 使用lowdb，您可以访问整个lodash API，因此有许多方法可以查询和操作数据。这里有几个例子可以让你开始。  请注意，数据是通过引用返回的，这意味着对返回对象的修改可能会改变数据库。为了避免这种行为，您需要使用.cloneDeep()。  另外，方法的执行是惰性的，也就是说，执行被推迟到.value()或.write()被调用。
 ### Example
@@ -193,5 +188,4 @@ const adapter = new FileSync('db.json', {
 })
 ```
 # 限制
-==
 Lowdb是一种在不设置数据库服务器的情况下存储数据的方便方法。它的速度足够快且安全，可以作为嵌入式数据库使用。  但是，如果您追求的是高性能和可伸缩性，而不是简单性，那么您应该坚持使用MongoDB这样的传统数据库。
