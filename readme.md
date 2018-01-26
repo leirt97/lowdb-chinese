@@ -77,7 +77,7 @@ console.log(db.get('posts').second().value())
 ```
 console.log(db.getState()) //就是 db
 ```
-###db.setState(newState)
+### db.setState(newState)
 替换 database 的状态 ( 文件未修改 )
 ```
 const newState = { newPosts: 1, newUser: 'leihao' } 
