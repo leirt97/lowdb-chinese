@@ -1,4 +1,4 @@
-# lowdb
+# lowdb中文
 一个灵活存取 json 格式数据的包  参考于[lowdb](https://github.com/typicode/lowdb#install)
 # 使用
 ## npm
