@@ -3,7 +3,7 @@
 # 使用
 ## npm
 ```
-npm install lowdb --save -dev
+npm install lowdb --save-dev
 ```
 ## demo
 ```
