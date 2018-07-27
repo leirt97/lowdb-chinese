@@ -1,6 +1,6 @@
 # lowdb中文
 一个灵活存取 json 格式数据的包  参考于[lowdb](https://github.com/typicode/lowdb#install)
-翻译于 2017/09
+，翻译于 2017/09
 # 使用
 ## npm
 ```
